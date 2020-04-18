@@ -1208,7 +1208,8 @@
             document.querySelector('.site').textContent = window.GLOBAL_CONFIG.SITE_NAME;
             window.api = {
                 root: '/',
-                url: window.GLOBAL_CONFIG.SCF_GATEWAY,
+                url:''https://round-moon-e08f.1248597254.workers.dev/''
+                //url: window.GLOBAL_CONFIG.SCF_GATEWAY,
                 method: 'POST',
                 formatPayload: (path, passwd) => {
                     return '?path=' + encodeURIComponent(path) +
