@@ -7,7 +7,7 @@
         * SITE_NAME：站点名称
         */
         window.GLOBAL_CONFIG = {
-            SCF_GATEWAY: "",
+            SCF_GATEWAY: "https://round-moon-e08f.1248597254.workers.dev",
             SITE_NAME: "FODI",
             IS_CF: true
         };
@@ -1208,8 +1208,7 @@
             document.querySelector('.site').textContent = window.GLOBAL_CONFIG.SITE_NAME;
             window.api = {
                 root: '/',
-                url:''https://round-moon-e08f.1248597254.workers.dev/''
-                //url: window.GLOBAL_CONFIG.SCF_GATEWAY,
+                url: window.GLOBAL_CONFIG.SCF_GATEWAY,
                 method: 'POST',
                 formatPayload: (path, passwd) => {
                     return '?path=' + encodeURIComponent(path) +
